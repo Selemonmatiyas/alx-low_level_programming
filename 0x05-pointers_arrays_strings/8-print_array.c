@@ -15,7 +15,7 @@ int i;
 i = 0;
 while (i < n)
 {
-prinf("%d", a[i]);
+printf("%d", a[i]);
 
 if (i < n - 1)
 {
