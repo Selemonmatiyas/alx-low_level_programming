@@ -15,7 +15,7 @@ int i, last;
 i = 0;
 while (str[1] != '\0')
 {
-i++
+i++;
 }
 
 last = (i + 1) / 2;
