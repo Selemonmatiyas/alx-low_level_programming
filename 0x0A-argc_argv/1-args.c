@@ -6,7 +6,7 @@
  * @argv: array pointing to arguments
  * Return: 0
  */
-int main(int argc, _attribute_((unsed)) char *argv[])
+int main(int argc, __attribute__((unsed)) char *argv[])
 {
 	int i;
 
