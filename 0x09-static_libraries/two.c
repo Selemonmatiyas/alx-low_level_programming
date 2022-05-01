@@ -1,15 +1,29 @@
 #include "main.h"
 int _isupper(int c)
 {
-	return 0;
+	if ((c >= 'A') && (c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
 int _isdigit(int c)
 {
-	return 0;
+	if ((c >= 48) && (c <= 57))
+		return (1);
+	else
+		return (0);
 }
 int _strlen(char *s)
 {
-	return 0;
+	int i = 1, sum = 0;
+	char pl = s[0];
+
+	while (pl != '\0')
+	{
+		sum++;
+		pl = s[i++];
+	}
+	return (sum);
 }
 void _puts(char *str)
 {
