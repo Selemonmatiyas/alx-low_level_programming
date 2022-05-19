@@ -1,18 +1,16 @@
-#include "lists.h"
-#include <stddef.h>
+#include <stdio.h>
+
+void print_stuff(void) __attribute__ ((constructor));
 
 /**
- * free_list - Frees a linked list of list_t's
- * @head: Pointer to the first node
+ * print_stuff - Prints a sentence
+ *
+ * Return: 1
  */
-void free_list(list_t *head)
+void print_stuff(void)
 {
-	list_t *tmp;
+	char *s1 = "You're beat! and yet, you must allow,";
+	char *s2 = "I bore my house upon my back!";
 
-	for (; head != NULL; head = tmp)
-	{
-		free(head->str);
-		tmp = head->next;
-		free(head);
-	}
+	printf("%s\n%s\n", s1, s2);
 }
